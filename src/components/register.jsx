@@ -79,7 +79,7 @@ function Register() {
                 }}
             >
                 {formik => (
-                    <div>
+                    <form>
                         <h1 className='my-4 font-weight-bold-display-4 head1'>REGISTER FORM</h1>
                         {console.log(formik)}
                         <Form>
@@ -111,6 +111,7 @@ function Register() {
                                     <option value="Mumbai">Mumbai</option>
                                     <option value="Delhi">Delhi</option>
                                     <option value="Bangalore">Bangalore</option>
+                                    <option value="Coimbatore">Coimbatore</option>
                                 </select>
                             </div>
                             <div className='mb-2'>
@@ -128,7 +129,7 @@ function Register() {
                             <p>Are you want to <Link to="/login">login</Link> ?</p>
                             </div>
                         </Form>
-                    </div>
+                    </form>
                 )}
             </Formik>
         </div>
